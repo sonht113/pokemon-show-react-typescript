@@ -144,6 +144,7 @@ button:hover {
     width: 100%;
     height: 100vh;
     visibility: visible;
+    animation: _zoomOut ease-in-out 3s;
 }
 .bg-modal__close{
     background-color: rgba(0, 0, 0, 0.5);
@@ -154,4 +155,15 @@ button:hover {
     width: 100%;
     height: 100vh;
     visibility: hidden;
+}
+
+@keyframes __zoomOut {
+    from {
+        transform: scale(.2);
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
